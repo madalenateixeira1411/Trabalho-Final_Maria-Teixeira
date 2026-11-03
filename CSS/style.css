@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* css da parte inicial do site */
+h1{
+    color: rgb(252, 138, 75);
+    text-decoration: solid;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#ola{
+    color: #000000;
+}
+
+p{
+    font-size: 30px;
+}
+
+
+#inicio{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#bloco_um{
+    width: 600px;
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+    display: inline-block;
+    vertical-align: middle; /* Alinha o bloco ao centro verticalmente */
+}
+
+#bloco_dois{
+    width: 600px;
+    padding: 10px 10px 10px 20px;
+    display: inline-block;
+    vertical-align: middle; /* Alinha o bloco ao centro verticalmente */
+}
+
+.btn-portfolio{
+    background-color:rgb(252, 138, 75); 
+    color: #ffffff;
+
+}
+
+/* mudança da cor do botão, com o rato em cima */
+.btn-portfolio:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+img{
+    width: 350px;
+    border-radius: 50%;
+   
+}
+
+/* css da parte inicial do site */
+
+
+
+/* css da secção de projetos */
+.projetos{
+    margin-top: 8%;
+    margin-left: 1%;
+    margin-bottom: 20%;
+}
+
+h4{
+    text-align: left;
+    font-display: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+/* css do rodapé */
+.texto-rodape{
+    font-size: 15px;
+    text-align: left;
+}
+
+.icon-link{
+    color: rgb(252, 138, 75); 
+    font-size: 30px;
+    margin-left: 5%;
+
+}
+
+.footer{
+    margin-left: 1%;
+    text-align: center;
+    border: #000000;
+}
+
+
+
+
+
+/* css da página sobre mim */
+.titulo-sobre-mim{
+    font-size: 60px;
+    
+}
+
+
+
+
+.texto-sobre-mim{
+    font-size: 18px;
+    text-align: justify;
+   
+    
+}
+
+#info{
+    margin-top: 5%;
+    margin-bottom: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+/* css da página de contacto */
+
+h6{
+    color:rgb(252, 138, 75);  
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.btn-form{
+    background-color:rgb(252, 138, 75); 
+    color: #ffffff;
+}
+
+/* mudança da cor do botão, com o rato em cima */
+.btn-form:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.form{
+    margin-top: 5%;
+    margin-bottom: 30%;
+  
+}
+
+#form-container{
+    margin-top: 8%;
+    margin-bottom: 30%;
+}
+
+
+
+
+/* Responsividade para mobile e tablet */
+
+/* Em ecrãs pequenos (Telemóveis - até 768px) */
+@media (max-width: 768px) {
+    /* Ajuste do tamanho dos títulos para ecrãs pequenos */
+    h1 {
+        font-size: 40px;
+    }
+    
+    .titulo-sobre-mim, h6 {
+        font-size: 38px;
+    }
+
+    h4 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Ajuste do tamanho do texto */
+    p {
+        font-size: 18px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 16px;
+    }
+
+    /* Remoção de larguras fixas dos blocos */
+    #bloco_um, #bloco_dois {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    /* Imagem de perfil proporcional */
+    .foto-perfil {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Ajustes nos margens para não haver demasiado espaço em branco */
+    #info, #form-container, .projetos {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Alinhamento do rodapé em telemóvel */
+    .footer .row > div {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+
+    .texto-rodape {
+        text-align: center;
+    }
+}
+
+/* Em ecrãs médios (Tablets - entre 768px e 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    #bloco_um, #bloco_dois {
+        width: 48%;
+    }
+}
